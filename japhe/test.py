@@ -100,5 +100,5 @@ import json
 with open('test.json', 'r') as file:
 	data = json.load(file)
 
-print(len(data))
+print(len(data['Receipt No.']))
 
