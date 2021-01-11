@@ -10,7 +10,7 @@ for u in tables:
     h = [[row.cells[a].paragraphs[0].text for row in u.columns]
          for a in range(len(u.rows))]
     dic = {x: list(y) for (x, y) in zip(h[0], zip(*h[1:]))}
-    keys = ['Receipt No.', 'Completion Time', 'Details', 'Paid In']
+    keys = ['Receipt No.', 'Completion Time', 'Details', 'Paid In', 'Withdrawn', 'Balance']
     tab.append({key: dic[key] for key in dic if key in keys})
 
 
